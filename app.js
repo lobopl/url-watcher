@@ -3,7 +3,6 @@ const {getDb, updateStatus} = require('./db');
 const db = getDb();
 
 
-
 db.each('SELECT id, url FROM site', (err, site) => {
   if (err) {
     return;
